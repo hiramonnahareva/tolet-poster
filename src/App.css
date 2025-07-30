@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.post-description-html {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.post-description-html p {
+  margin-bottom: 0.7em;
+}
+
+.post-description-html strong {
+  font-weight: bold;
+  color: #181818;
+}   
+
+/* Target the editable area */
+
+.editor-wrapper .ql-container {
+  border-radius: 10px;
+  border: 2px solid #1d4ed8; /* Tailwind's blue-700 */
+}
+
+.editor-wrapper .ql-toolbar {
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #1d4ed8;
+  border-bottom: none;
+}

@@ -1,0 +1,13 @@
+@import "tailwindcss";   
+
+/* Target the editable area */
+.custom-quill .ql-container {
+  border: none; /* already styled by parent */
+  border-radius: 0 0 0.5rem 0.5rem; /* match Tailwind rounded */
+  min-height: 200px; /* container height */
+}
+
+.custom-quill .ql-editor {
+  min-height: 150px;  /* actual text area height */
+  padding: 1rem;
+}
