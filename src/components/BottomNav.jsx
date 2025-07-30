@@ -1,5 +1,5 @@
 import { FaHome, FaPlus, FaRegUser, FaSlidersH } from 'react-icons/fa';
-import pinned from '../assets/PinBoard.png';  
+import pinned from '../assets/pinboard.png'; // Assuming you have a pinboard icon
 import { NavLink } from 'react-router-dom';        
 
 

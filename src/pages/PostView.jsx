@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Card from "../components/Card";
 import { IoShareSocialOutline } from "react-icons/io5";
-import { GoQuestion } from "react-icons/go"; 
-import pinboard from '../assets/pinboard.png';
+import { GoQuestion } from "react-icons/go";  
+import pinboard from '../assets/pinboard.png'; // Assuming you have a pinboard icon
 
 // Share options
 const shareLinks = [
