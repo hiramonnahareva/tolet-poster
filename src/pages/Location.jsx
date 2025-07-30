@@ -136,8 +136,9 @@
 
 // export default LocationFilter;
 
+
 import React, { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet"; 
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -226,7 +227,7 @@ const MapWithLocationSelector = () => {
         center={currentPosition}
         zoom={14}
         style={{ height: "400px", width: "100%" }}
-      >
+      >  
         <TileLayer
           attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
