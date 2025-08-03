@@ -56,7 +56,7 @@ const PostView = () => {
   const [reported, setReported] = useState(false); 
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/posts/${id}`)
+    fetch(`https://tolet-poster-server-new.onrender.com/api/posts/${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched single post:", data); // Debug

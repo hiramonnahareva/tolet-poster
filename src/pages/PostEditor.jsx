@@ -35,7 +35,7 @@
 
 //     const data = { title, description, contactInfo, location, category };
 //     try {
-//       const response = await fetch('http://localhost:3000/api/posts', {
+//       const response = await fetch('https://tolet-poster-server-new.onrender.com/api/posts', {
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //         body: JSON.stringify(data),
@@ -182,7 +182,7 @@ const CreatePoster = () => {
 
     const data = { title, description, contactInfo, location, category };
     try {
-      const response = await fetch('http://localhost:3000/api/posts', {
+      const response = await fetch('https://tolet-poster-server-new.onrender.com/api/posts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

@@ -26,7 +26,7 @@ const Signup = () => {
   const from = location.state?.from?.pathname || "/";
 
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth); 
-  const [signInWithFacebook, fbUser, fbLoading, fbError] = useSignInWithFacebook(auth);  
+  const [signInWithFacebook, fbUser, fbLoading, fbError] = useSignInWithFacebook(auth);      
 
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
