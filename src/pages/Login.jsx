@@ -176,8 +176,8 @@ const Login = () => {
                 </div>
 
                 <input
-                  type="submit"
-                  value="Sign Up"
+                  type="submit" 
+                   value="Login"
                   className="bg-gray-900 text-[18px] font-semibold rounded py-2 text-white w-full"
                 />
               </form>  

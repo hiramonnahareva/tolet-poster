@@ -1,12 +1,13 @@
 import React from 'react' 
 
-export default function Card({ post, className }) {
+export default function Card({ post, className, pinboard }) {
   return (
      <div className={`bg-white lg:h-[300px] md:h-[100%] p-4 shadow-md text-center mb-4 ${className}`}>
-            <div className="bg-white lg:h-[270px] md:h-[100%] border-[1.73px] p-4 shadow text-center">                   
-              <div className="font-bold text-2xl mt-4 underline mb-2">
+            <div className="bg-white relative lg:h-[270px] md:h-[100%] border-[1.73px] p-4 shadow text-center">                   
+              <div className="font-bold  text-2xl mt-4 underline mb-2">
                 {post.title}
-              </div>  
+              <img className='absolute right-2 top-2' src={pinboard} alt="" />                   
+              </div>                                                            
               <div className="text-sm leading-relaxed whitespace-pre-line">
                 {/* Strip HTML tags if needed */}
                 {post.description ? stripHtml(post.description) : ""}
@@ -14,8 +15,8 @@ export default function Card({ post, className }) {
               <div>  
                 <h2 className="underline font-semibold mb-2 mt-4">যোগাযোগঃ</h2>
                 <p className="text-sm">{post.contactInfo}</p>
-              </div>  
-              </div>            
+              </div>   
+              </div>          
             </div>           
   )
   

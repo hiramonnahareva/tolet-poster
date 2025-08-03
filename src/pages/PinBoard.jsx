@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-import Card from "../components/Card";
+import { Link } from "react-router-dom"; 
+import Card from "../components/Card"; 
+import pinboard from '../assets/pinned.png';
 
 const PinBoard = () => {
   const pins = JSON.parse(localStorage.getItem("pinnedPosts") || "[]"); 
@@ -9,13 +10,13 @@ const PinBoard = () => {
       <div className="w-full max-w-xs mt-8">
         <h2 className="text-white text-xl font-bold mb-4 text-center">Pinned Posts</h2>
         {pins.length === 0 && (
-          <div className="text-gray-400 text-center">No pinned posts yet.</div>  
+          <div className="text-gray-400 text-center">No pinned posts yet.</div>   
         )}
         {pins?.map((post) => (
          
-            <Link to={`/post/${post?.id}`} key={post.id}>
+            <Link to={`/post/${post?.id}`} key={post.id}> 
 
-              <Card post={post}/>       
+              <Card pinboard={pinboard} post={post}/>       
 
               </Link>
 
