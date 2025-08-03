@@ -1,16 +1,16 @@
 // firebase.js
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth } from "firebase/auth"; 
 
 const firebaseConfig = {
-   apiKey: "AIzaSyCDlXOcaBUFQ_9cK9L7X5tW_k6m46Q6KRY",
-    authDomain: "parts-manufacturer.firebaseapp.com",
-    projectId: "parts-manufacturer",
-    storageBucket: "parts-manufacturer.appspot.com", 
-    messagingSenderId: "796737479018",
-    appId: "1:796737479018:web:8eb5c91f20c7b8bb660513"  
-};   
+  apiKey: "AIzaSyCS4lxUbcSpwOtbYlj0pU84GJdROiIzjhY",
+  authDomain: "tolet-poster.firebaseapp.com",
+  projectId: "tolet-poster",
+  storageBucket: "tolet-poster.firebasestorage.app",
+  messagingSenderId: "880701453740",
+  appId: "1:880701453740:web:918b17eac3535d94b0b609"
+}; 
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
-export default auth;    
+export default auth;     

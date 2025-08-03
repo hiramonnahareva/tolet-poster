@@ -25,7 +25,7 @@ function AppRoutes() {
       <Route path="/signup" element={<Signup />} /> 
       <Route path="/profile" element={
         <ProtectedRoute>
-          <Profile />
+          <Profile /> 
         </ProtectedRoute>
       } />
     </Routes>       
