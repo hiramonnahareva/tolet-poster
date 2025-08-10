@@ -266,7 +266,7 @@ const MapWithLocationSelector = () => {
             <option>To-Let</option>
             <option>Rent</option>
             <option>Buy</option>
-          </select>
+          </select> 
         </div>
       </div>                                                                    
     </div>   
