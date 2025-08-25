@@ -14,21 +14,25 @@ function AppRoutes() {
     <Routes>  
       <Route path="/" element={<Home />} />
       <Route path="/pin-board" element={<PinBoard />} /> 
-      <Route path="/post-editor" element={
+      <Route path="/post-editor" 
+        element={
         <ProtectedRoute>  
           <PostEditor />
          </ProtectedRoute>  
-      } />
+      }
+        />
        <Route path="/post/:id" element={<PostView />} /> 
       <Route path="/filter" element={<LocationFilterSidebar />} />  
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} /> 
-      <Route path="/profile" element={
+      <Route path="/profile" 
+        element={
         <ProtectedRoute>
           <Profile /> 
         </ProtectedRoute>
-      } />
-    </Routes>       
+      }
+        />
+    </Routes>        
   );
 }
 
